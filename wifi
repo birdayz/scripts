@@ -3,6 +3,8 @@
 # This script starts wifi-menu to select a wifi network and works around
 # problems where sometimes the connection fails because the interface is already
 # up or wpa_supplicant does not "work", for some unknown reason.
+# Reads $WLAN_INTERFACE, which is supposed to provide the wifi interface to use. If not set,
+# the interface will be guessed.
 
 set -e
 
